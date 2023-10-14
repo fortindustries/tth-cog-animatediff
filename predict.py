@@ -133,9 +133,9 @@ class Predictor(BasePredictor):
             negative_prompt     = n_prompt,
             num_inference_steps = steps,
             guidance_scale      = guidance_scale,
-            width               = 512,
-            height              = 512,
-            video_length        = 16,
+            width               = 432,
+            height              = 768,
+            video_length        = 32,
         ).videos
 
         samples = torch.concat([sample])
